@@ -1,0 +1,66 @@
+/* NavBar.css */
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa; /* Lichtgrijze achtergrondkleur */
+    padding: 0.5rem 1rem;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
+    color: #007bff; /* Blauw kleur voor hover effect */
+}
+
+/* Dropdown styling */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 200px;
+}
+
+.dropdown-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content li {
+    padding: 0.5rem 1rem;
+}
+
+.dropdown-content li a {
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-content li a:hover {
+    background-color: #f1f1f1; /* Achtergrondkleur bij hover */
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
